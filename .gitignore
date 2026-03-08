@@ -1,0 +1,60 @@
+# =============================================================================
+# BMO Voice Assistant — .gitignore
+# =============================================================================
+
+# --- Python artifacts --------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+*.wheel
+MANIFEST
+
+# --- Virtual environments ----------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- AI model files (never commit binaries to git) ---------------------------
+# Allow models/README.md so collaborators know what to download.
+models/*
+!models/README.md
+*.onnx
+*.bin
+*.gguf
+*.pt
+*.pth
+*.safetensors
+
+# --- Test / coverage artifacts -----------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# --- IDE files ----------------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS files -----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs & temporary files --------------------------------------------------
+*.log
+*.tmp
+*.bak
+
+# --- Secrets / environment variables -----------------------------------------
+.env
+.env.*
+secrets.yaml
